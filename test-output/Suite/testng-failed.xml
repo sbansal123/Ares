@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listener.TestListener"/>
+  </listeners>
+  <test name="LoginModule(failed)">
+    <parameter name="OS-Version" value="10"/>
+    <parameter name="browserVersion" value="74"/>
+    <parameter name="OS-Name" value="windows"/>
+    <parameter name="browserType" value="chrome"/>
+    <parameter name="Session" value="Testing"/>
+    <classes>
+      <class name="t1.Test1">
+        <methods>
+          <include name="name2"/>
+          <include name="launchURL"/>
+        </methods>
+      </class> <!-- t1.Test1 -->
+    </classes>
+  </test> <!-- LoginModule(failed) -->
+</suite> <!-- Failed suite [Suite] -->
